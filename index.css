@@ -1,0 +1,257 @@
+:root {
+    --primary-color: rgb(32, 32, 32);
+    --secondary-color: rgb(0, 0, 0);
+    --header-color: rgba(23, 23, 23, 0.95);
+    --line-color: rgb(255, 0, 0);
+    --text-color: white;
+    font-size: 17px;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.audiowide-regular {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+
+body{
+    background-color: var(--primary-color);
+    font-family: "Audiowide", serif;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 6rem;
+    width: 100%;
+    background-color: var(--header-color);
+    position: fixed;
+    top: 0;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .right {
+    display: flex;
+    justify-content: space-between;
+    width: 15rem;
+    gap: 20px;
+}
+
+nav .left {
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+nav a:hover {
+    color: var(--line-color);
+}
+
+nav img {
+    border-radius: 50%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+    padding: 8rem 2rem;
+}
+
+section:nth-of-type(odd) {
+    background-color: var(--primary-color);
+}
+
+section:nth-of-type(even) {
+    background-color: var(--secondary-color);
+}
+
+#about-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8rem 2rem;
+    gap: 10px;
+}
+
+#about-section .left {
+    width: 45%;
+    padding: 30px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    min-width: 30rem;
+}
+
+#about-section img {
+    max-width: 550px;
+    min-width: 550px;
+    max-height: 750px;
+    min-height: 750px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+
+#about-section .right {
+    width: 55%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-left: 5px;
+}
+
+#about-section .right h2 {
+    width: 125px;
+    font-size: 3rem;
+    border-bottom-width: 4px;
+    border-color: var(--line-color);
+    border-bottom-style: solid;
+}
+
+#about-section .right p {
+    padding-top: 10px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    overflow-y: scroll;
+    max-height: 750px;
+    overflow-y: scroll;
+}
+
+
+#skills-section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 450px;
+}
+
+#skills-section h2 {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-size: 3rem;
+    text-justify: center;
+}
+
+.skills-container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills-container-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 175px;
+}
+
+.skills-container-item i {
+    font-size: 100px;
+}
+
+#project-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 500px;
+    width: 100%;
+    gap: 3rem;
+}
+
+#project-section h2 {
+    width: 100%;
+    font-size: 3rem;
+    height: 25%;
+    text-align: center;
+}
+
+.project-card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.project-card {
+    min-width: 250px;
+    max-width: 250px;
+    height: 400px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.529);
+    display: grid;
+    border-radius: 10px;
+    grid-template-rows: 175px 50px;
+}
+
+.project-card img {
+    width: 250px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.project-card h3 {
+    text-align: start;
+    font-size: 1vimn;
+    border-bottom-color: white;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow-x: scroll;
+}
+
+.project-card p {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    overflow-y: scroll;
+    margin-bottom: 5px;
+}
+
+.project-card-container a {
+    text-decoration: none;
+}
+
+.project-card-container a:hover {
+    transform: scale(1.15,1.15);
+}
+
+
+
